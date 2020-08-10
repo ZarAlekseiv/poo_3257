@@ -16,18 +16,20 @@ public class Smartphone {
     public String color;
     public int camara;
     
-    public void Smartphone() {
+    public int ontelefono(int encender) {
     
-        //System.out.println("Bienvenido a" + this.marca); 
-        //return 0;
+        int real=0;
+        real =(int)Math.abs(1)*(int)encender;
+        System.out.println("Bienvenido a " + this.marca); 
+       return real;
 }
     public float porcbateria( int bateria){
         float reales= 0.0f;
-        reales =(float) Math.random()*(float)bateria;
-        System.out.println("Bienvenido a " + this.marca);
-       return reales;
+        reales =(float)Math.random()*(float)bateria;
+        System.out.println("Modelo: " + this.modelo);
+        return reales;
     }
-    public void recibirllamada(){
+    public void hacerllamada(){
         System.out.println("¿Quiere contestar");
        // return 0;
     }
