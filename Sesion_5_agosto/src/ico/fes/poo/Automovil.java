@@ -10,7 +10,7 @@ package ico.fes.poo;
  * @author Perro de Tindalo
  */
 public class Automovil {
-    private String marca;
+    public String marca;
     private String subMarca;
     private int modelo;
     private String color;
@@ -23,6 +23,10 @@ public class Automovil {
         System.out.println("Ese modelo está fuera de rango"); 
     }
     }
+    
+    //public void setMarca (char mar ){
+       // if(mar = Acura)
+   // }
     public int getModelo(){
         return this.modelo;   
     }
@@ -41,7 +45,7 @@ public class Automovil {
     System.out.println("Avanzando el auto " + this.marca);
         return reales;
 }
-    @Override
+   @Override
     public String toString() {
         return this.marca + "," + this.subMarca + "," + this.modelo + "," + this.color;
     }

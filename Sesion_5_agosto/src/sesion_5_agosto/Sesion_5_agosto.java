@@ -18,33 +18,36 @@ public class Sesion_5_agosto {
      */
     public static void main(String[] args) {
         Automovil miCarro = new Automovil();
-    //miCarro.marca = "VW";
+    miCarro.marca = "VW";
     //miCarro.subMarca = "Golf";
     //miCarro.modelo = 1990;
     //miCarro.color = "Gris";
-    //miCarro.estModelo (2075)
+    miCarro.setModelo (1990);
     float x = miCarro.avanzar(1000);
         System.out.println("Avanzados=" + x);
     
         Automovil miCarroDos = new Automovil();
-       // miCarroDos.marca = "Ford";
+        miCarroDos.marca = "Ford";
         //miCarroDos.subMarca = "Mustang";
         //miCarroDos.modelo = 2010;
         //miCarroDos.color = "amarillo";
         miCarroDos.setModelo (2010);
         
-        System.out.println("Avanzados=" + miCarroDos.avanzar (500));
+        System.out.println("Avanzados = " + miCarroDos.avanzar (500) );
         
         Automovil miCarroTres =new Automovil();
-        //miCarroTres.marca = "Acura";
+        miCarroTres.marca = "Acura";
         //miCarroTres.subMarca = "NSX";
         //miCarroTres.modelo = 2013;
         //miCarroTres.color = "Gris";
+        miCarroTres.setModelo (2013);
+       // miCarroTres.setMarca();
         
-        System.out.println("Avanzados=" + miCarroTres.avanzar (800));
+        System.out.println("Avanzados = " + miCarroTres.avanzar (800));
      
         System.out.println(miCarro);
         System.out.println(miCarroDos);
+        System.out.println(miCarroTres);
     }
     
 }
