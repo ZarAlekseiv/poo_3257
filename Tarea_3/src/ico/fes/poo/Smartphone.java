@@ -27,7 +27,7 @@ public class Smartphone {
         System.out.println("Bienvenido a " + this.marca);
        return reales;
     }
-    public void recibirllamada(char colgar){
+    public void recibirllamada(){
         System.out.println("¿Quiere contestar");
        // return 0;
     }
