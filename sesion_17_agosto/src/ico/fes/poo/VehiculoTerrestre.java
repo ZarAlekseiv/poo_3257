@@ -19,6 +19,13 @@ public class VehiculoTerrestre extends Vehiculo{
     public VehiculoTerrestre(int tipo, String kmPorHora) {
         this.tipo = tipo;
         this.kmPorHora = kmPorHora;
+
+    }
+
+    public VehiculoTerrestre(int tipo, String kmPorHora, String descripcion, String fabricante, String material) {
+        super(descripcion, fabricante, material); // super: hace referencia a la clase base en una relacion de herencia
+        this.tipo = tipo;
+        this.kmPorHora = kmPorHora;
     }
 
     public String getKmPorHora() {
@@ -65,5 +72,8 @@ public class VehiculoTerrestre extends Vehiculo{
         return 0;
         
     }
-    
+    @Override //Polimorfismo: sobreescritura  de metodos
+    public void usar(){
+        System.out.println("Utilizando el Ferrocarril que viaja en vías férreas" + "de la marca " +this.getFabricante());
+    }
 }
